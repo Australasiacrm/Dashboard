@@ -1,8 +1,8 @@
 .header{
   width: 100%
-  padding:10px;
-  font-size: 3em;
-  text-align:center;
+  padding:40px;
+  font-size: 2em;
+  text-align-last: center;
   background-color: black;
   color: white;
   font-family: verdana;
@@ -21,7 +21,7 @@
 }
 
 /* Style the sidenav links and the dropdown button */
-.sidenav a, .branch-btn {
+.sidenav a, .payments-btn {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 16px;
@@ -36,10 +36,46 @@
 }
 
 /* On mouse-over */
-.sidenav a:hover, .branch-btn:hover {
+.sidenav a:hover, .payments-btn:hover {
   color: #f1f1f1;
 }
 
+.sidenav a, .squad-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .squad-btn:hover {
+  color: #f1f1f1;
+}
+.sidenav a, .reports-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .reports-btn:hover {
+  color: #f1f1f1;
+}
 /* Main content */
 .main {
   margin-left: 200px; /* Same as the width of the sidenav */
@@ -54,18 +90,40 @@
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-.branch-container {
+.payments-container {
   display: none;
   background-color: #262626;
   padding-left: 8px;
 }
 
 /* Optional: Style the caret down icon */
-.branch-down {
+.payments-down {
   float: right;
   padding-right: 8px;
 }
 
+.squad-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.squad-down {
+  float: right;
+  padding-right: 8px;
+}
+.reports-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.reports-down {
+  float: right;
+  padding-right: 8px;
+}
 /* Some media queries for responsiveness */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
