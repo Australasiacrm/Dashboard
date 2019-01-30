@@ -2,7 +2,7 @@
   width: 100%
   padding:40px;
   font-size: 2em;
-  text-align-last: center;
+  text-align: center;
   background-color: black;
   color: white;
   font-family: verdana;
@@ -37,7 +37,7 @@
 
 /* On mouse-over */
 .sidenav a:hover, .payments-btn:hover {
-  color: #f1f1f1;
+  color: salmon;
 }
 
 .sidenav a, .squad-btn {
@@ -56,7 +56,7 @@
 
 /* On mouse-over */
 .sidenav a:hover, .squad-btn:hover {
-  color: #f1f1f1;
+  color: salmon;
 }
 .sidenav a, .reports-btn {
   padding: 6px 8px 6px 16px;
@@ -74,7 +74,7 @@
 
 /* On mouse-over */
 .sidenav a:hover, .reports-btn:hover {
-  color: #f1f1f1;
+  color: salmon;
 }
 /* Main content */
 .main {
@@ -85,7 +85,7 @@
 
 /* Add an active class to the active dropdown button */
 .active {
-  background-color: green;
+  background-color: #8A2BE2;
   color: white;
 }
 
