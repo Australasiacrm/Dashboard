@@ -1,25 +1,40 @@
 <!DOCTYPE html>
+
 <html>
   <head>
 <title>Multilevel login</title>
+<link rel="stylesheet" href="login.css">
+<style>
+body {
+  background-image: url('crm.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+}
+</style>
   </head>
-  <body>
+
+
+
+<body>
 <form method="POST">
   <table>
     <tr>
-      <td>User type</td>
+      <td><b><font size=5>User type</b></font></td>
       <td><select name="type">
-          <option value="-1">select user type</option>
+          <option value="-1">Select user type</option>
             <option value="Admin">Admin</option>
             <option value="User">User</option>
           </select></td>
 </tr>
 <tr>
-        <td>username</td>
+        <td><b><font size=5>Username</b></font></td>
         <td><input type="text" name="username" placeholder="username"></td>
       </tr>
       <tr>
-        <td>password</td>
+        <td><b><font size=5>Password</b></font></td>
         <td><input type="password" name="pwd" placeholder="password"></td>
       </tr>
       <tr>
@@ -36,15 +51,14 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-
+$database = "multilevel";
 // Create connection
-$conn = new mysqli($servername, $username, $password,"multilevel");
+$conn = new mysqli($servername, $username, $password,$database);
 
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-echo "Connected successfully";
 
 
  //$conn=new mysqli_connect("localhost","root","","multilevel");
@@ -67,9 +81,10 @@ if(isset($_POST['submit'])){
     if($row['username']==$username && $row['password']==$password && $row['type']=='Admin'){
       header("Location: dashboard.html");
     }elseif ($row['username']==$username && $row['password']==$password && $row['type']=='User') {
-      header("Location: user.html");
-
-    }
+      header("Location: process.html");
   }
-}
+
+      }
+  }
+
 ?>

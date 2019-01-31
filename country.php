@@ -4,12 +4,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CRM</title>
+    <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="branch.css">
+
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
+
+<style>
+body{
+  background-color: gray;
+  padding: 300px;
+  background-image: url("world.jpg");
+}
+</style>
 <body>
 <select name="Country">
     <option value="AF">Afghanistan</option>
@@ -268,11 +275,14 @@ $( "select" )
   .change(function() {
     var str = "";
     $( "select option:selected" ).each(function() {
-      str += $( this ).text() + " " + "is selected."+" "+"Your application is being forwarded to brisbane branch";
+  str += $( this ).text() + " " + "is selected."+" "+"Your application is being forwarded to brisbane branch";
     });
     $( "div" ).text( str );
   })
   .trigger( "change" );
 </script>
+<div class="go">
+  <a href="dashboard.html">Go</a>
+</div>
 </body>
 </html>
