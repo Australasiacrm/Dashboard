@@ -1,25 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="jquery-2.1.4.min.js"></script>
-  <script src="Chart.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="style.css">
-
 <style>
 body {
   font-family: "Lato", sans-serif;
-  background-color: lightskyblue;
+  background-color: lightblue;
 }
 
 
 </style>
 </head>
 <body>
-
 <div class="header">Australasia</div>
-
 <div class="sidenav">
   <a href="dashboard.html"><i class="dashboard"></i> DASHBOARD</a>
   <a href="branchlog.html"><i class="branchlog"></i> BRANCH LOG</a>
@@ -59,133 +53,16 @@ body {
 
   <a href="leads.html"><i class="leads"></i> LEADS</a>
   <a href="support.html"><i class="support"></i> SUPPORT</a>
-  <a href="chat.html"><i class="chat"></i>CHAT</a>
-  <a href="login.php"><i class="login"></i>LOGIN</a>
-  <a href="logout.php"><i class="logout"></i>LOGOUT</a>
-
 </div>
 
 <div class="main">
   <h2>DASHBOARD</h2>
-
+  
 </div>
-<div class="main">
-<div class="widget">
-  <div class="title">Workflow</div>
-  <canvas id="mycanvas" width="256" height="256">
-    <script>
-        $(document).ready(function(){
-            var ctx = $("#mycanvas").get(0).getContext("2d");
-
-            //pie chart data
-            //sum of values = 360
-            var data = [
-                {
-                    value: 270,
-                    color: "cornflowerblue",
-                    highlight: "lightskyblue",
-                    label: "education"
-                },
-                {
-                    value: 50,
-                    color: "lightgreen",
-                    highlight: "yellowgreen",
-                    label: "Visa"
-                },
-                {
-                    value: 40,
-                    color: "orange",
-                    highlight: "darkorange",
-                    label: "Accomodation"
-                }
-            ];
-
-            //draw
-            var piechart = new Chart(ctx).Pie(data);
-        });
-    </script>
-  <div class="chart"></div>
-</div>
-
-  <div class="widget">
-    <div class="title">Reminder</div>
-    <div class="calendar__header">
-      <div>mon</div>
-      <div>tue</div>
-      <div>wed</div>
-      <div>thu</div>
-      <div>fri</div>
-      <div>sat</div>
-      <div>sun</div>
-    </div>
-    <div class="calendar__week">
-      <div class="calendar__day day">1</div>
-      <div class="calendar__day day">2</div>
-      <div class="calendar__day day">3</div>
-      <div class="calendar__day day">4</div>
-      <div class="calendar__day day">5</div>
-      <div class="calendar__day day">6</div>
-      <div class="calendar__day day">7</div>
-    </div>
-    <div class="calendar__week">
-      <div class="calendar__day day">8</div>
-      <div class="calendar__day day">9</div>
-      <div class="calendar__day day">10</div>
-      <div class="calendar__day day">11</div>
-      <div class="calendar__day day">12</div>
-      <div class="calendar__day day">13</div>
-      <div class="calendar__day day">14</div>
-    </div>
-    <div class="calendar__week">
-      <div class="calendar__day day">15</div>
-      <div class="calendar__day day">16</div>
-      <div class="calendar__day day">17</div>
-      <div class="calendar__day day">18</div>
-      <div class="calendar__day day">19</div>
-      <div class="calendar__day day">20</div>
-      <div class="calendar__day day">21</div>
-    </div>
-    <div class="calendar__week">
-      <div class="calendar__day day">22</div>
-      <div class="calendar__day day">23</div>
-      <div class="calendar__day day">24</div>
-      <div class="calendar__day day">25</div>
-      <div class="calendar__day day">26</div>
-      <div class="calendar__day day">27</div>
-      <div class="calendar__day day">28</div>
-    </div>
-    <div class="calendar__week">
-      <div class="calendar__day day">29</div>
-      <div class="calendar__day day">30</div>
-      <div class="calendar__day day">31</div>
-      <div class="calendar__day day">1</div>
-      <div class="calendar__day day">2</div>
-      <div class="calendar__day day">3</div>
-      <div class="calendar__day day">4</div>
-    </div>
-  </div>
-    <div class="chart"></div>
-  </div>
-
-
-    <div class="widget">
-      <div class="title">Appointments</div>
-    <h1><a href="country.php">Country</a></h1>
-
-      <div class="chart"></div>
-    </div>
-
-  <div class="widget">
-    <div class="title">Tasks</div>
-    <div class="chart"></div>
-  </div>
-</div>
-
-
 
 <script src="script.js">
 
 </script>
 
 </body>
-</html>
+</html> 

@@ -2,7 +2,7 @@
   width: 100%
   padding:40px;
   font-size: 2em;
-  text-align: center;
+  text-align-last: center;
   background-color: black;
   color: white;
   font-family: verdana;
@@ -37,7 +37,7 @@
 
 /* On mouse-over */
 .sidenav a:hover, .payments-btn:hover {
-  color: salmon;
+  color: #f1f1f1;
 }
 
 .sidenav a, .squad-btn {
@@ -56,7 +56,7 @@
 
 /* On mouse-over */
 .sidenav a:hover, .squad-btn:hover {
-  color: salmon;
+  color: #f1f1f1;
 }
 .sidenav a, .reports-btn {
   padding: 6px 8px 6px 16px;
@@ -74,7 +74,7 @@
 
 /* On mouse-over */
 .sidenav a:hover, .reports-btn:hover {
-  color: salmon;
+  color: #f1f1f1;
 }
 /* Main content */
 .main {
@@ -85,7 +85,7 @@
 
 /* Add an active class to the active dropdown button */
 .active {
-  background-color: #8A2BE2;
+  background-color: green;
   color: white;
 }
 
@@ -128,58 +128,4 @@
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
-
-
-
-.main {
-  display: flex;
-  flex-flow: row wrap;
-  padding: 10px;
-}
-
-.widget {
-  width: 400px;
-  height: 300px;
-  float: right;
-  margin: 15px;
-  border-radius: 6px;
-  background-color: #ffffff;
-  position: relative;
-
-}
-.widget .title {
-  background-color: #eef1f7;
-  border-bottom: 1px solid #dfe4ec;
-  padding: 10px;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  color: #617085;
-  font-weight: 600;
-}
-
-
-.calendar{}
-
-.calendar__week,
-.calendar__header {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-}
-.calendar__week {
-  grid-auto-rows: 50px;
-  text-align: right;
-}
-
-.calendar__header {
-  grid-auto-rows: 10px;
-  align-items: center;
-  text-align: center;
-}
-
-.calendar__day {
-  padding: 12px;
-}
-body{
-  background-color: lightskyblue;
 }
