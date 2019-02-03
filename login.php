@@ -5,14 +5,14 @@
 <title>Multilevel login</title>
 <link rel="stylesheet" href="login.css">
 <style>
-body {
+/*body {
   background-image: url('crm.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
 
-}
+}*/
 </style>
   </head>
 
@@ -23,7 +23,7 @@ body {
   <table>
     <tr>
       <td><b><font size=5>User type</b></font></td>
-      <td><select name="type">
+      <td><select name="type" style="font-size: 25px;width:250px;height:40px ; ">
           <option value="-1">Select user type</option>
             <option value="Admin">Admin</option>
             <option value="User">User</option>

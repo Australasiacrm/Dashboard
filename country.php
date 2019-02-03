@@ -12,13 +12,13 @@
 
 <style>
 body{
-  background-color: gray;
-  padding: 300px;
-  background-image: url("world.jpg");
+  padding :250px;
+  font-size: 30px;
+background-color: lightskyblue;
 }
 </style>
 <body>
-<select name="Country">
+<select name="Country"  style="font-size: 40px;width:800px ;height:50px;">
     <option value="AF">Afghanistan</option>
     <option value="AX">Åland Islands</option>
     <option value="AL">Albania</option>
@@ -271,18 +271,16 @@ body{
 </select>
 <div></div>
 <script>
-$( "select" )
+$( "select")
   .change(function() {
     var str = "";
     $( "select option:selected" ).each(function() {
-  str += $( this ).text() + " " + "is selected."+" "+"Your application is being forwarded to brisbane branch";
+  str += $( this ).text() + " " + "is selected."+" "+"All the applications forms from this region will be displayed";
     });
     $( "div" ).text( str );
   })
   .trigger( "change" );
 </script>
-<div class="go">
-  <a href="dashboard.html">Go</a>
-</div>
+<button style="width:90px;height:40px;"> <a href="dashboard.html" >Go</button>
 </body>
 </html>
